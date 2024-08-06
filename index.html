@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_CV</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <h1 class = "port">Portfolio</h1>
+            <div class = "nav-links" id = "navlinks">
+                
+                <ul>
+                    <li><a href=#about>ABOUT</a></li>
+                    <li><a href="#about">SKILLS</a></li>
+                    <li><a href="#experience" onclick = "opentab('certificates')">CERTIFICATES</a></li>
+                    <li><a href="#education" onclick = "opentab('education')">EDUCATION</a></li>
+                    <li><a href=#experience>EXPERIENCE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+        <div class = "textbox">
+            <p class="n1">Hello!! I'm</p>
+           <h1 id = "Name">Tarini Agrawal</h1>
+           <p class = "n1">Student at VIT Vellore</p>
+           <button class = "btn"><a href="https://drive.google.com/file/d/1faTM90b9JFZOTE602swAtPhUxHWRn6mw/view?usp=sharing" class = "btn_text">Download CV</a></button>
+        </div>
+    </section>
+    <section class = "about" id = "about">
+        <div class = "container">
+            <div class = "row">
+                <div class = "left">
+                    <img src="images/my_img_2.jpg" alt="my image">
+                </div>
+                <div class = "right">
+`                   <h1 class = "subtitle">About Me</h1>
+                    <p>Hey there! I'm Tarini Agrawal, a 2nd-year Computer Science student at VIT Vellore, with a passion for painting, swimming, and reading. <br>   
+                        As a budding coder, I thrive on challenges and love diving deep into the world of algorithms and technology.
+                        When I'm not coding, you'll find me swimming laps or immersed in a good book, drawing inspiration from both the tranquility of the water and the vast realms of literature. <br>
+                        With a blend of technical skills and creative flair, I'm excited to bring a unique perspective to any project or team. Let's connect and create something amazing together!
+                    </p>
+                    <div class = "tabs">
+                        <p class = "tab-link active-link" onclick = "opentab('skills')"> Skills </p>
+                        <p class = "tab-link" onclick = "opentab('certificates')"> Certificates </p>
+                        <p class = "tab-link" onclick = "opentab('education')"> Education </p>
+                    </div>
+                    <div class="tab-content active-tab" id = "skills">
+                        <ul>
+                            <li><span>Coding Languages</span><br><ul><li>C</li><li>C++</li><li>Java</li><li>Python</li></ul></li>
+                            <li><span>Web Programming</span><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></li>
+                            <li><span>Libraries</span><ul><li>NumPy</li><li>Pandas</li><li>PyTorch</li></ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id = "certificates">
+                        <ul>
+                            <li><span>AWS Certified Cloud Practitioner | Amazon Web Services</span><ul><li>Currently preparing for certification, Exam scheduled on : 8 August 2024</li></ul></li>
+                            <li><span>Entrepreneurship | NPTEL | July 2023 – October 2023</span><ul><li>Completed NPTEL course on Entrepreneurship by IIT Madras with top 1% ranking.</li></ul></li>
+                            <li><span>BUSINESS ANALYST | Finlatics | February 2024 – April 2024</span><ul><li>Gained proficiency in Python programming, statistical analysis, and executing industry-specific projects across
+                                diverse sectors.</li></ul></li>
+                            <li><span>Data Science with Python | Finlatics | March 2024 – April 2024 </span> <ul><li>Leveraged analytical skills to solve real-world problems using Excel, Power BI, and Python.</li></ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id = "education">
+                        <ul>
+                            <li><span>2022-current</span><ul><li>CGPA:9.56 (till 4rth sem)</li><li>BTECH Computer Science and Engineering.</li><li>Vellore Institute of Technology</li></ul></li>
+                            <li><span>202-2022</span><ul><li>Percentage: 85.8%</li><li>Higher Secondary</li><li>Board:MSBSHSE</li></ul></li>
+                            <li><span>2020 </span><ul><li>Percentage: 94.8%</li><li>Secondary</li><li>Board:CBSE</li></ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class = "experience" id = "experience">
+            <h1 class = "subtitle_exp">Experience</h1>
+            <div class = "exp">
+                <h2 class = "exp_title">Summer Intern | IIT Bombay</h2>
+                <h3 class = "exp_subtitle">Professor Ashwin Gumaste, Department of Computer Science and Engineering</h3>
+                <ul>
+                    <li>Designed and implemented a RAG pipeline in PyTorch for medical question-answering using the
+                        google/gemma-2b-it model.</li>  
+                    <li>Created and optimized embeddings with Sentence-Transformers (all-mpnet-base-v2).</li>
+                    <li>Applied advanced RAG techniques including multiple query generation, document reranking with
+                        cross-encoder/ms-marco-TinyBERT-L-6, and Hypothetical Document Embeddings (HyDE).</li>
+                    <li>Leveraged Hugging Face Transformers and Spacy for advanced text processing and model fine-tuning.</li>
+                    <li>Improved document retrieval and response accuracy through innovative machine learning methods.</li>  
+                </ul>
+            </div>
+            <div class = "exp">
+                <h2 class = "exp_title">Finance Head | Design Club Pixelate</h2>
+                <h3 class = "exp_subtitle">VIT Vellore</h3>
+                <ul>
+                    <li>Managed all financial operations for the club.</li>  
+                    <li>Member of the organizing committee for Design Odyssey, a 36-hour designathon with 700+ participants.</li>
+                    <li>Conducted a web development workshop for 70+ juniors, imparting skills in HTML, CSS, and JavaScript.</li>
+                    <li>Played a key role in creating and promoting the club’s stall at Quanta, significantly increasing fresher intake and club registrations.</li>  
+                </ul>
+            </div>
+            <div class = "exp">
+                <h2 class = "exp_title">Team Leader | e-Yantra Robotics Competition</h2>
+                <h3 class = "exp_subtitle">IIT Bombay</h3>
+                <ul>
+                    <li>Led a team of 4 in the prestigious robotics competition.</li>  
+                    <li>Participated in a project-based learning initiative, tackling real-world problem statements.</li>
+                    <li>Gained hands-on experience in robotics and machine learning algorithms through various challenges and tasks.</li>
+                    <li>Developed a machine learning model for image classification in PyTorch with 87% Accuracy.</li>  
+                </ul>
+            </div>
+        </section>
+        <section class = "contact" id = "contact">
+            <h1 class = "cont-subtitle">Contact Me</h1>
+            <div class="contactcontainer">
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>  tarini.agrawal2022@vitstudent.ac.in</p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i>  9820287516</p>
+                <div class = "social-icons">
+                    <i class = "fa fa-facebook"></i>
+                    <i class = "fa fa-instagram"></i>
+                    <i class = "fa fa-youtube"></i>
+                    <i class = "fa fa-linkedin"></i>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script>
+        const tablinks = document.getElementsByClassName("tab-link");
+        const tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname)
+        {
+            for(i of tablinks)
+            {
+                i.classList.remove("active-link");     
+            }
+            for(i of tabcontents)
+            {
+                i.classList.remove("active-tab");     
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
