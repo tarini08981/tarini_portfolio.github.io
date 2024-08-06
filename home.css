@@ -1,0 +1,273 @@
+*
+{
+    margin: 0;
+    padding: 0; 
+}
+body
+{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+}
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    color: purple;
+    font-size: 20px;
+}
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.port
+{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: rgb(98, 7, 124); */
+    color: purple;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li a::after
+{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background:  rgb(98, 7, 124);
+    display:block;
+    margin: auto;
+    transition: 0.3s;
+
+}
+
+.nav-links ul li a:hover::after
+{
+    width: 100%;
+}
+.textbox
+{
+    color: white;   
+    font-weight:200;
+    position:absolute;
+    padding-top: 20px;
+    top: 25%;
+    left: 28%;
+    text-align: center;
+}
+.n1
+{
+    padding: 20px;
+    font-size: 40px;
+}
+#Name
+{
+    padding: 20px;
+    color: purple;
+    font-size: 80px;
+}
+.btn
+{
+    margin: 40px;
+    height: 40px;
+    width:200px;
+    font-size: 25px;
+    background-color: purple;
+    box-shadow: 5px 5px purple;
+    color: #ffbbff;
+}
+.btn_text
+{
+    text-decoration: none;
+    color: white;
+}
+/* ------------------------about----------------------------------- */
+.about
+{
+    color:white;
+    padding: 80px;
+}
+.row
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.left
+{
+    flex-basis:35%;
+}
+.left img
+{
+    width: 100%;
+    /* border-radius: 15px; */
+
+}
+.right
+{
+    flex-basis: 50%;
+    text-align: center;
+    padding-right: 60px;
+    color: #e9dfe9;
+    line-height: 20px;
+    text-align: left;
+    font: 200;
+}
+.subtitle
+{
+    font-size: 40px;
+    padding-bottom: 30px;
+    color:white;
+    text-align: center;
+}
+.tabs
+{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.tab-link
+{
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color:rgb(200, 181, 193);
+    cursor: pointer;
+}
+.tab-link::after
+{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background:  purple;
+    display: block;
+    transition: 0.3s;
+}
+.tab-link:hover:after
+{
+    width: 100%;
+}
+.tab-link.active-link::after
+{
+    width: 50%;
+}
+.tab-content 
+{
+    padding-top: 15px;
+    padding-left: 5px;
+    display: none;
+}
+.tab-content ul li
+{
+    font:bolder;
+    padding: 5px 2px;
+    /* font-size: 20px; */
+    color: purple;
+    list-style: none;
+}
+.tab-content ul li ul li
+{
+    font:100;
+    list-style: none;
+    padding: 2px 15px;
+    color: rgb(217, 199, 217);
+}
+.tab-content.active-tab
+{
+    display: block;
+}
+/* ----------------experience-------------------- */
+
+.experience
+{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+.subtitle_exp
+{
+    font-size: 37xpx;
+}
+.exp
+{
+    text-align: left;
+    font-size: 40%;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: rgb(217, 199, 217);
+}
+.exp_title
+{
+    padding-bottom: 10px;
+    color: purple;
+    font-size: 180%;
+}
+.exp_subtitle
+{
+    padding-bottom: 10px;
+    color: (217, 199, 217);
+    font-size: 150%;
+}
+.exp ul
+{
+    padding-left: 40px;
+}
+.exp ul li
+{
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size:120%;
+    color: white;
+    text-align: justify;
+    line-height: 150%;
+}
+/* ----------------contact-------------------- */
+
+.contact
+{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+.contactcontainer
+{
+    padding-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(217, 199, 217);
+}
+.social-icons
+{
+    padding-top: 25px;
+    color: rgb(217, 199, 217);
+}
+.contactcontainer .fa
+{
+    color: purple;
+}
+.social-icons .fa
+{
+    color: rgb(217, 199, 217);
+}   
